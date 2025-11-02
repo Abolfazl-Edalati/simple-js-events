@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نمایش ایونت‌های JS (با سبد خرید)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="cart-icon">🛒 سبد خرید: <span id="cart-count">0</span></div>
+    </header>
+
+    <h1>صفحه تست ۸ ایونت اصلی جاوا اسکریپت</h1>
+    <p>هر عملی که انجام دهید، نتیجه آن را در کادر سبز مشاهده خواهید کرد.</p>
+
+    <div class="status-box">
+      <p>
+        <strong>(ایونت ۶) اسکرول:</strong>
+        <span id="scroll-output">هنوز اسکرول نشده</span>
+      </p>
+    </div>
+
+    <div class="event-container">
+      <h2>۱. ایونت Click (اضافه/کم کردن محصول)</h2>
+      <div class="product-cart">
+        <span class="product-name">محصول نمونه</span>
+        <div class="controls">
+          <button id="decrease-btn" class="cart-btn">-</button>
+          <span id="quantity-display">0</span>
+          <button id="increase-btn" class="cart-btn">+</button>
+        </div>
+      </div>
+      <p>خروجی: <span id="click-output">سبد خرید خالی است.</span></p>
+    </div>
+
+    <div class="event-container">
+      <h2>۲. ایونت Mouseover (بردن ماوس روی عنصر)</h2>
+      <div id="hover-area" class="interactive-box">
+        ماوس را روی این کادر ببرید
+      </div>
+      <p>خروجی: <span id="hover-output"></span></p>
+    </div>
+
+    <div class="event-container">
+      <h2>۳. ایونت Keydown (فشار دادن دکمه کیBورد)</h2>
+      <input type="text" id="keydown-input" placeholder="اینجا تایپ کنید..." />
+      <p>خروجی: <span id="keydown-output"></span></p>
+    </div>
+
+    <div class="event-container">
+      <h2>۴. ایونت Submit (ارسال فرم)</h2>
+      <form id="test-form">
+        <input type="text" placeholder="نام کاربری" required />
+        <button type="submit">ارسال</button>
+      </form>
+      <p>خروجی: <span id="submit-output"></span></p>
+    </div>
+
+    <div class="event-container">
+      <h2>۵. ایونت Change (تغییر مقدار)</h2>
+      <select id="select-input">
+        <option value="">یک گزینه را انتخاب کنید</option>
+        <option value="گزینه ۱">گزینه ۱</option>
+        <option value="گزینه ۲">گزینه ۲</option>
+      </select>
+      <p>خروجی: <span id="change-output"></span></p>
+    </div>
+
+    <div class="event-container">
+      <h2>۷. ایونت Click (تغییر رنگ پس‌زمینه)</h2>
+      <div class="color-switcher">
+        <button class="color-btn" id="color-btn-white">سفید (پیش‌فرض)</button>
+        <button class="color-btn" id="color-btn-blue">آبی روشن</button>
+        <button class="color-btn" id="color-btn-green">سبز</button>
+      </div>
+      <p>خروجی: <span id="color-output">روی یک دکمه کلیک کنید.</span></p>
+    </div>
+
+    <div class="spacer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
